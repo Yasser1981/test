@@ -1,0 +1,246 @@
+/* Gobal style*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 2.2rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+button {
+  padding: 2rem 4rem;
+  background-color: lightblue;
+  color: black;
+  border: none;
+  font-size: 2rem;
+  border-radius: 0.25rem;
+  font-weight: 200%;
+  cursor: pointer;
+}
+
+/*Nave and Hero section*/
+.main-head {
+  background-color: black;
+  color: white;
+}
+nav {
+  padding: 1.5;
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+#logo {
+  display: flex;
+  flex: 1 1 60rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+}
+.hero {
+  min-height: 90vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.2), transparent),
+    url(/img/landing-page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* جعل حجم الصورة يتغير مع حجم النافذة */
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h3 {
+  padding: 3rem;
+}
+/*Locations Section*/
+#locations {
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.2), transparent),
+    url(/img/new-york-page.png);
+  background-position: center;
+  background-size: 100% 100%; /*set the size of the photo to the size of section*/
+  background-repeat: no-repeat;
+  display: flex;
+  /*justify-content: center;
+  align-items: center;
+  text-align: center;*/
+}
+.locations-head {
+  width: 90%;
+  /*margin: auto;  used in case of auto margin*/
+  margin: 7rem 20rem 10rem 10rem;
+}
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+.locations-head h3 {
+  padding: 4rem 0rem;
+  background: linear-gradient(#131c27, #663b34);
+  background-clip: text; /*to apply this background color to the text*/
+  -webkit-text-fill-color: transparent; /*The text becomes transparent and only the background color shows*/
+}
+/*Benefits Section*/
+.benefits-head {
+  background-color: #343c44;
+  min-height: 20vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.benefits-head h3 {
+  padding: 1rem;
+}
+.cards {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 70vh;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap; /*to make the boxes one over the other when minimize the window*/
+}
+.cards img {
+  /*height: 100px;*/
+  max-width: 25%; /*this is a subtitute to the above height=100px*/
+  margin: 2rem;
+}
+.card-icon {
+  margin: 0rem;
+  background-color: silver;
+}
+
+.card {
+  flex: 1 1 25rem; /*without this, the boxes witll be not equal in size (in width)*/
+  min-height: 40vh; /*the heigh of each box*/
+  margin: 2rem 5rem;
+  padding: 1rem;
+  box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.2), 0px 20px 20px rgb(0, 0, 0, 0.2); /*adding shodow with down direction*/
+}
+.card h3 {
+  padding: 2rem;
+}
+
+/*Contact Section*/
+#contact {
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.2), transparent),
+    url(/img/contact-mountain.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-wrapper {
+  background-color: rgba(19, 28, 39, 0.5);
+  width: 35%; /*width of the form to the whole section*/
+  color: white;
+  border-radius: 1rem;
+}
+.form-head {
+  padding: 2rem;
+  text-align: center;
+}
+.name-form,
+.email-form {
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.name-form label,
+.email-form label {
+  margin: 0rem 2rem;
+}
+.form-wrapper button {
+  width: 100%; /*to make the width of the button equal to the wrapper-form*/
+  margin: 2rem 0rem 0rem 0rem; /*or we can use margin-top*/
+  padding: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.form-wrapper input {
+  padding: 1rem 2rem;
+}
+/*Footer Style*/
+footer {
+  background-color: rgba(0, 4, 8, 0.808);
+  color: whitesmoke;
+}
+.footer-wrapper {
+  display: flex; /*if it's added to footer above, nothing will happen*/
+  padding: 1rem;
+  width: 90%; /*can not add this item to the footer above, it will decrease the length of the section*/
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap; /*keeping the order of icons when zooming*/
+}
+.footer-wrapper h5 {
+  /*margin: 2rem 50rem 2rem 2rem;*/ /*if add this the order of icons and logo will change while zooming*/
+  flex: 1 1 70rem;
+}
+.footer-wrapper ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 40rem;
+}
+/* Media Query*/
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+}
